@@ -929,3 +929,105 @@ main > section {
   }
 }
 
+/* الصفحة الرئيسية - تسامح */
+
+.tolerance-home {
+  min-height: 85vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 65px 20px !important;
+  background: linear-gradient(145deg, #edf5ec, #dcebdd);
+}
+
+.tolerance-content {
+  max-width: 760px;
+  margin: auto;
+}
+
+.tolerance-home .hero-label {
+  color: #62836a;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.tolerance-home h1 {
+  color: #294b35;
+  font-size: clamp(30px, 6vw, 48px);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.tolerance-home h2 {
+  color: #63816a;
+  font-size: clamp(19px, 4vw, 25px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.tolerance-description {
+  color: #526657;
+  font-size: 16px;
+  line-height: 2;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.discover-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 35px;
+  text-decoration: none;
+  color: #315b43;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.discover-icon {
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #557a5e;
+  border-radius: 50%;
+  font-size: 23px;
+  transition: 0.3s ease;
+}
+
+.discover-link:hover .discover-icon {
+  background: #315b43;
+  color: white;
+  transform: translateY(5px);
+}
+
+.discover-link:hover {
+  color: #557a5e;
+}
+
+.tolerance-home .hero-note {
+  color: #849b87;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+  .tolerance-home {
+    min-height: 82vh !important;
+    padding: 45px 20px !important;
+  }
+
+  .tolerance-home h1 {
+    font-size: 31px;
+  }
+
+  .tolerance-description {
+    font-size: 14px;
+  }
+}
+
