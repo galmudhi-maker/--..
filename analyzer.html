@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسامح | حللي موقفك</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html">تَسامُح<span>.</span></a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="features.html">مميزاتنا</a>
+    <a class="active" href="analyzer.html">حللي موقفك</a>
+    <a href="why.html">لماذا تسامح؟</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero reveal">
+  <span class="section-label">مساحتك الخاصة</span>
+  <h1>خذي لحظة.. واحكي لنا.</h1>
+  <p>ليس كل موقف يحتاج إلى رد سريع، أحيانًا نحتاج إلى فهم ما حدث أولًا.</p>
+</section>
+
+<section class="section analyzer-section reveal" id="analyzer">
+
+  <div class="section-heading">
+    <span class="section-label">الأداة الأولى</span>
+    <h2>محلل المواقف</h2>
+    <p>أجيبي عن الخطوات التالية لنقدم لك اقتراحات أولية مناسبة.</p>
+  </div>
+
+  <div class="analyzer-box">
+
+    <label for="problemType">ما نوع الموقف؟</label>
+    <select id="problemType">
+      <option value="">اختاري نوع الموقف</option>
+      <option value="friend">خلاف مع صديقة</option>
+      <option value="misunderstanding">سوء فهم</option>
+      <option value="school">موقف داخل المدرسة</option>
+      <option value="family">خلاف عائلي</option>
+      <option value="social">موقف عبر مواقع التواصل</option>
+      <option value="words">كلمة سببت لي الحزن</option>
+      <option value="other">موقف آخر</option>
+    </select>
+
+    <label for="problemText">احكي لنا ما حدث</label>
+    <textarea id="problemText" maxlength="1000" placeholder="اكتبي تفاصيل الموقف هنا.. دون ذكر أسماء أو معلومات شخصية."></textarea>
+    <div class="input-footer">
+      <span>معلوماتك لا تُرسل إلى خادم.</span>
+      <span id="charCount">0 / 1000</span>
+    </div>
+
+    <label>كيف تشعرين الآن؟</label>
+    <div class="emotion-options">
+      <button type="button" class="emotion" data-emotion="هادئة">😌<span>هادئة</span></button>
+      <button type="button" class="emotion" data-emotion="منزعجة">😐<span>منزعجة</span></button>
+      <button type="button" class="emotion" data-emotion="حزينة">😔<span>حزينة</span></button>
+      <button type="button" class="emotion" data-emotion="غاضبة">😠<span>غاضبة</span></button>
+    </div>
+
+    <label for="goal">ماذا تريدين من الحل؟</label>
+    <select id="goal">
+      <option value="إصلاح العلاقة">إصلاح العلاقة</option>
+      <option value="فهم ما حدث">فهم ما حدث</option>
+      <option value="الاعتذار">تقديم اعتذار</option>
+      <option value="تجاوز الموقف">تجاوز الموقف</option>
+      <option value="وضع حدود واضحة">وضع حدود واضحة</option>
+    </select>
+
+    <button type="button" id="analyzeBtn" class="primary-btn full-btn">اكتشفي خطوات الحل ✨</button>
+
+    <div id="analysisResult" class="result-box" hidden aria-live="polite">
+      <span class="section-label">قراءة أولية لموقفك</span>
+      <h3 id="resultTitle"></h3>
+      <p id="resultDescription"></p>
+      <h4>خطوات يمكنك تجربتها</h4>
+      <ol id="resultSteps"></ol>
+
+      <div class="suggested-words">
+        <h4>كلمات قد تساعدك</h4>
+        <p id="resultSentence"></p>
+        <button type="button" id="copySentence">نسخ الجملة</button>
+      </div>
+
+      <p class="result-disclaimer">هذه اقتراحات عامة وليست حكمًا على الأشخاص. إذا كان الموقف يتضمن أذى أو تهديدًا، اطلبي مساعدة شخص بالغ موثوق.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section message-section reveal" id="message-tool">
+
+  <div class="section-heading">
+    <span class="section-label">الأداة الثانية</span>
+    <h2>رسالة بلا إرسال.</h2>
+    <p>لا تمنعي نفسك من التعبير، فقط امنحي كلماتك فرصة لتُفهم كما تقصدينها.</p>
+  </div>
+
+  <div class="message-box">
+
+    <label for="messageTone">كيف تريدين أن تكون نبرة رسالتك؟</label>
+    <select id="messageTone">
+      <option value="calm">هادئة وحنونة</option>
+      <option value="firm">واضحة وحازمة</option>
+      <option value="reconcile">تفتح باب المصالحة</option>
+    </select>
+
+    <label for="rawMessage">اكتبي رسالتك كما تشعرين بها</label>
+    <textarea id="rawMessage" maxlength="1500" placeholder="اكتبي كل ما تريدين قوله.."></textarea>
+
+    <button type="button" class="primary-btn full-btn" id="rewriteBtn">أعيدي صياغة رسالتي ✨</button>
+
+    <div class="rewritten-result" id="rewrittenResult" hidden aria-live="polite">
+      <span class="section-label">رسالتك بعد إعادة الصياغة</span>
+      <h3>نفس المعنى، كلمات أكثر وعيًا.</h3>
+      <p id="rewriteExplanation"></p>
+      <div class="rewrite-paper">
+        <p id="rewrittenText"></p>
+      </div>
+      <button type="button" id="copyRewrite" class="light-btn">نسخ الرسالة</button>
+    </div>
+
+    <p class="privacy-note">الرسالة لا تُرسل ولا تُحفظ. راجعي الصياغة قبل استخدامها.</p>
+  </div>
+
+</section>
+
+<section class="section green-banner reveal">
+  <h2>التسامح لا يعني أن تتنازلي عن حقك.</h2>
+  <p>يمكنك اختيار الحوار، وفي الوقت نفسه الحفاظ على حدودك.</p>
+  <a href="why.html" class="light-btn">اكتشفي فلسفة تسامح</a>
+</section>
+
+</main>
+
+<footer>
+  <a class="logo" href="index.html">تَسامُح<span>.</span></a>
+  <p>نفهم أكثر، نتسامح بوعي.</p>
+  <small>© تسامح</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
