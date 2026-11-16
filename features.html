@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسامح | مميزاتنا</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html">تَسامُح<span>.</span></a>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a class="active" href="features.html">مميزاتنا</a>
+    <a href="analyzer.html">حللي موقفك</a>
+    <a href="why.html">لماذا تسامح؟</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero reveal">
+  <span class="section-label">اكتشفي أدواتنا</span>
+  <h1>كل أداة لها أثر.</h1>
+  <p>مجموعة من التجارب التفاعلية، صُممت لتساعدك على فهم المواقف والتعامل معها بوعي.</p>
+</section>
+
+<section class="section reveal">
+  <div class="feature-grid">
+
+    <article class="feature-card">
+      <div class="feature-icon">🧠</div>
+      <h3>محلل المواقف</h3>
+      <p>اكتبي تفاصيل موقفك، واكتشفي قراءة أولية وخطوات عملية للتعامل معه.</p>
+      <a href="analyzer.html">ابدئي التحليل ←</a>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon">💌</div>
+      <h3>رسالة بلا إرسال</h3>
+      <p>حوّلي العبارات الحادة إلى كلمات واضحة وهادئة دون فقدان المعنى.</p>
+      <a href="analyzer.html#message-tool">جربيها ←</a>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon">🪞</div>
+      <h3>زاوية أخرى</h3>
+      <p>شاهدي المواقف من منظور مختلف، واكتشفي احتمالات لم تخطر ببالك.</p>
+      <a href="#perspective">اكتشفي التجربة ←</a>
+    </article>
+
+    <article class="feature-card">
+      <div class="feature-icon">🌱</div>
+      <h3>تحدي اليوم</h3>
+      <p>مهمة صغيرة تحوّل فكرة التسامح إلى سلوك يومي.</p>
+      <a href="#challenge">ابدئي التحدي ←</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- زاوية أخرى -->
+<section class="section perspective-section reveal" id="perspective">
+  <div class="section-heading">
+    <span class="section-label">تجربة تفاعلية</span>
+    <h2>زاوية أخرى.. هل ترين الصورة كاملة؟</h2>
+    <p>شاهدي الموقف أولًا، ثم اكتشفي ما قد لا يظهر من النظرة الأولى.</p>
+  </div>
+
+  <div class="perspective-stage">
+
+    <div class="scene-art" id="sceneArt">
+      <div class="scene-sun">☀</div>
+      <div class="scene-person">👩🏻</div>
+      <div class="scene-bubble">لماذا لم ترد على رسالتي؟</div>
+      <div class="scene-decoration">✦</div>
+    </div>
+
+    <span class="scene-count" id="sceneCount">المشهد 1 من 4</span>
+    <h3 id="sceneTitle">الصمت لا يعني دائمًا التجاهل.</h3>
+    <p id="sceneDescription">صديقتك لم ترد على رسالتك منذ ساعات، فبدأتِ تشعرين أنها تتجاهلك.</p>
+
+    <button type="button" class="primary-btn" id="nextPerspective">
+      اكتشفي زاوية أخرى ✨
+    </button>
+
+    <div class="scene-dots" id="sceneDots">
+      <span class="active"></span><span></span><span></span><span></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- تحدي اليوم -->
+<section class="section challenge-section reveal" id="challenge">
+
+  <div class="section-heading">
+    <span class="section-label">مهمة صغيرة.. أثر كبير</span>
+    <h2>تحدي اللطف: اتركي أثرًا اليوم.</h2>
+    <p>ليس عليك تغيير العالم كله، يكفي أن تبدئي بتصرف واحد.</p>
+  </div>
+
+  <div class="challenge-box">
+    <div class="challenge-top">
+      <span>🌿 بطاقة مهمتك</span>
+      <span id="challengeNumber">01 / 03</span>
+    </div>
+
+    <div class="challenge-illustration" id="challengeIllustration">💌</div>
+    <span class="challenge-category" id="challengeCategory">مهمة الكلمات</span>
+    <h3 id="challengeTitle">قولي كلمة تستحق أن تُقال.</h3>
+    <p id="challengeDescription">اختاري شخصًا وقدمي له كلمة تقدير صادقة لم تقوليها من قبل.</p>
+
+    <div class="challenge-progress">
+      <span id="challengeProgress"></span>
+    </div>
+
+    <button type="button" class="primary-btn" id="challengeDone">
+      أنجزت المهمة ✓
+    </button>
+
+    <p id="challengeMessage" class="challenge-message" aria-live="polite"></p>
+  </div>
+
+</section>
+
+<section class="section green-banner reveal">
+  <h2>هل هناك موقف يشغل بالك؟</h2>
+  <p>ابدئي من هنا، فقد تكون أول خطوة هي الأهم.</p>
+  <a href="analyzer.html" class="light-btn">حللي موقفك الآن</a>
+</section>
+
+</main>
+
+<footer>
+  <a class="logo" href="index.html">تَسامُح<span>.</span></a>
+  <p>نفهم أكثر، نتسامح بوعي.</p>
+  <a href="https://www.unesco.org/ar/days/tolerance" target="_blank" rel="noopener noreferrer">اليوم الدولي للتسامح | اليونسكو</a>
+  <small>© تسامح</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
